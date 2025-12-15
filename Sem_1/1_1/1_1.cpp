@@ -2,19 +2,17 @@
 
 #include <iostream>
 using namespace std;
-
-int main()
-{
-    int a, b, c;
+int main() {
+    int a, b, c, max;
     cin >> a >> b >> c;
-    if (a>=b and a>=c) {
-        cout << a;
-    }
-    else if (b>=a and b>=c) {
-        cout << b;
+    if (a >= b) {
+        max = a;
     }
     else {
-        cout << c;
+        max = b;
     }
+    if (c > max) {
+        max = c;
+    }
+    cout << max << endl;
 }
-
