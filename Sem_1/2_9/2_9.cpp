@@ -1,47 +1,80 @@
-﻿
-#include <iostream>
-using namespace std;
-int main()
+int n, d;
+
+cin; >> n;
+d= n / 2;
+// задняя
+for (int i = 0; i < d; i++)
 {
-    int n;
-    cin >> n;
-    int wigth = n * 2 - 1, length = 2 * n - 1;
-
-    int space = n - 1, star = n;
-
-    for (int i = 0; i < n - 1; i++) {
-        for (int j = 0; j < space; j++) {
-            cout << " ";
-        }
-        for (int j = 0; j < star; j++) {
-            cout << "*";
-        }
-        cout << endl;
-        star += 1;
-        space -= 1;
-    }
-    
-    for (int i = 0; i < wigth; i++) {
-        cout << "*";
-    }
-    cout << endl;
-
-    space = 1, star = wigth-1;
-
-    for (int i = 0; i < n - 1; i++) {
-        for (int j = 0; j < star; j++) {
-            cout << "*";
-        }
-        for (int j = 0; j < space; j++) {
-            cout << " ";
-        }
-        cout << endl;
-        star -= 1;
-        space += 1;
-    }
-
-
-
-    return 0;
-
+	cout << "";
 }
+for (int i = 0; i < n; i++)
+{
+	cout << '*';
+}
+cout << endl;
+// верх диог
+for (int i = 0; i < d - 1; i++)
+{
+	for (int j = 1; j < d - 1; j++)
+	{
+		cout << "";
+
+	}
+	cout << '*';
+	for (int j = 0; j < n - 2; j++)
+	{
+		cout << "";
+	}
+	cout << '*';
+	for (int j = 1; j < 1; j++)
+	{
+		cout << "";
+	}
+	cout << '*' << endl
+}
+// перелняя верх плюс кус задн
+for (int i = 0; i < n; i++)
+{
+	cout << '*';
+}
+for (int i = 0; i < d - 2; i++)
+{
+	cout << "";
+}
+cout << '*' << endl;
+//боковые грани
+for (int i = 0; i < d - 1; i++)
+{
+	cout << '*';
+	for (int j = 0; j < n - 2; j++)
+	{
+		cout << "";
+	}
+	cout << '*';
+	for (int j = 1; j < d - i - 1; j++)
+	{
+		cout << "";
+	}
+	cout << '*' << endl
+}
+// нижние диоганали
+for (int i = 0; i < d - 1; i++)
+{
+	cout << '*';
+	for (int j = 0; j < n - 2; j++)
+	{
+		cout << "";
+	}
+	cout << '*';
+	for (int j = 1; j < d - i - 1; j++)
+	{
+		cout << "";
+	}
+	cout << '*' << endl;
+}
+// нижняя грань
+for (int i = 0; i < n; i++)
+{
+	cout << '*';
+}
+cout << endl;
