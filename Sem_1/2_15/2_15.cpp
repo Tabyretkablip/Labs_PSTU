@@ -1,20 +1,22 @@
-﻿#include <iostream>
-using namespace std;
-
-int main() {
-    setlocale(LC_ALL, "RU");
-    int n, s, k;
+#include <iostream> 
+using namespace std; 
+int main(){
+    int N, S, pr; 
     bool flag = false;
-    cin >> n >> s;
-    while (n > 0 && !flag)
-    {
-        k = n % 10;
-        if (k == s)
-        {
+    cin >> N >> S; 
+    while (N > 0){
+        pr = N%10;  
+        if(pr == S){
             flag = true;
-            cout << "Цифра найдена!" << endl;
+            break;
         }
-        else { n /= 10; }
+        N = N/10; 
     }
-    if (!flag) { cout << "Цифра не найдена!" << endl; }
-}
+    if (flag == false){
+        cout << "Нет, число S не входит в N" << endl; 
+    }
+    else{
+        cout << "Да, число S входит в N" << endl;
+    }
+    return 0;
+} 
