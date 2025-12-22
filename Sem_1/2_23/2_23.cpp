@@ -1,28 +1,26 @@
-﻿#include <iostream>
-#include <cmath>
-int main()
-{
-    int N, count = 0;
-    float max = 0;
-    std::cout << "enter N: ";
-    std::cin >> N;
-    for (int i = 1; i <= N; i++)
-    {
-        float a = sin(i + i / N);
-        if (a > max)
-        {
-            max = a;
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N;
+    cin >> N;
+    
+    long long S = 0;
+    int i = 1;
+    
+    while (i <= N) {
+        long long term = 1;
+        int j = 0;
+        
+        while (j <= i) {
+            term *= (i + j);
+            j++;
         }
+        
+        S += term;
+        i++;
     }
-    std::cout << "max = " << max << std::endl;
-    for (int i = 1; i <= N; i++)
-    {
-        float a = sin(i + i / N);
-        if (a == max)
-        {
-            count++;
-        }
-    }
-    std::cout << count;
+    
+    cout << "Сумма S = " << S << endl;
     return 0;
 }
