@@ -1,21 +1,14 @@
-﻿
 #include <iostream>
 using namespace std;
-
-int main()
-{
-    int n, su=0, a;
-    cin >> n;
-    if (n == 0) {
-        cout << "Невозможно посчитать сумму";
+main(){
+    int N, b; 
+    cin >> N; 
+    if (N == 0){
+        cout << "Нельзя посчитать сумму натуральных чисел при N <= 0" << endl;
     }
-    else {
-        for (int i = 1; i <= n; i++) {
-            su += i;
-        }
-        cout << su;
+    while (N!=0){
+        b += N;
+        N -= 1;
     }
-
-    return 0;
+    cout << b << endl; 
 }
-
