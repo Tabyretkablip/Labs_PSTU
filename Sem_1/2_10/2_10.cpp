@@ -1,25 +1,16 @@
-﻿
 #include <iostream>
-using namespace std;
 int main()
 {
-    int n,a;
-    cin >> n;
-    if (n < 2) {
-        cout << "Ошибка - невозможно составить последовательность чисел" << endl;
-    }
-    else {
-        int maxa;
-        cin >>maxa;
-        for (int i=1; i < n; i++) {
-            cin >> a;
-            if (maxa < a) {
-                maxa = a;
-            }
-        }
-        cout << maxa;
-    }
-    
-
+	int N, a, max = 0;
+	std::cin >> N;
+	for (int i = 1; i <= N; i++)
+	{
+		std::cin >> a;
+		if (a > max)
+		{
+			max = a;
+		}
+	}
+	std::cout << "max: " << max;
+	return 0;
 }
-
