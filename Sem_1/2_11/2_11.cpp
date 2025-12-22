@@ -1,40 +1,23 @@
-﻿
 #include <iostream>
 using namespace std;
-int main()
-{
-    setlocale(LC_ALL, "Russian");
-    int n, a;
-    cin >> n;
-    if (n < 2) {
-        cout << "Ошибка - невозможно составить последовательность чисел" << endl;
-    }
-    else {
-        int perv=0;
-        for (int i = 0; i < n; i++) {
-            cin >> a;
-            if (perv == 0) {
-                if (a != 0) {
-                    if (a < 0) {
-                        perv = -1;
-                    }
-                    else {
-                        perv = 1;
-                    }
-                }
-            }  
-        }
-        if (perv > 0) {
-            cout << "Первое ввели - положительное число";
-        }
-        else if (perv < 0) {
-            cout << "Первое ввели - отрицательное число";
-        }
-        else {
-            cout << "Все числа в последовательности нулевые";
+int main(){
+    int N, tmp;
+    bool plusFirst = false; //flag 1 
+    bool minusFirst = false; //flag 2
+
+    cout << "Введите количество элементов: ";
+    cin >> N; 
+    
+    for(int i = 1; i <= N; i++){
+        cin >> tmp; 
+        if (!plusFirst && !minusFirst){
+            if(tmp > 0) {plusFirst = true;}
+            else if (tmp < 0) {minusFirst = true;}
         }
     }
-
-
+    if (plusFirst) {cout << "Первое число было положительным" << endl;}
+    else if (minusFirst) {cout << "Первое число было отрицательным" << endl;}
+    else { cout << "Последовательность состоит из нулей" << endl;}
+    cout << endl; 
+    return 0;
 }
-
