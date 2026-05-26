@@ -1,0 +1,170 @@
+{
+    "coachNotes": [
+    ],
+    "equipment": [
+        {
+            "hall": "Основной зал",
+            "name": "Беговая дорожка",
+            "status": "Доступно"
+        },
+        {
+            "hall": "Малый зал",
+            "name": "Велотренажёр",
+            "status": "Доступно"
+        },
+        {
+            "hall": "Основной зал",
+            "name": "Силовая рама",
+            "status": "Доступно"
+        },
+        {
+            "hall": "Малый зал",
+            "name": "Гантели",
+            "status": "Доступно"
+        },
+        {
+            "hall": "Основной зал",
+            "name": "Коврики",
+            "status": "Доступно"
+        },
+        {
+            "hall": "Малый зал",
+            "name": "TRX",
+            "status": "Доступно"
+        },
+        {
+            "hall": "Основной зал",
+            "name": "Боксёрская груша",
+            "status": "Доступно"
+        }
+    ],
+    "purchases": [
+        {
+            "client": "Михаил Сюзёв",
+            "dateTime": "2026-05-20T15:29:02",
+            "groupAdd": 0,
+            "monthsAdd": 0,
+            "name": "Йога (Групповая тренировка)",
+            "personalAdd": 0,
+            "price": 500
+        },
+        {
+            "client": "Михаил Сюзёв",
+            "dateTime": "2026-05-20T15:28:50",
+            "groupAdd": 0,
+            "monthsAdd": 0,
+            "name": "Йога (Групповая тренировка)",
+            "personalAdd": 0,
+            "price": 500
+        },
+        {
+            "client": "Дмитрий Нагиев",
+            "dateTime": "2026-05-20T15:02:36",
+            "groupAdd": 0,
+            "monthsAdd": 0,
+            "name": "Йога (Групповая тренировка)",
+            "personalAdd": 0,
+            "price": 500
+        }
+    ],
+    "trainings": [
+    ],
+    "users": [
+        {
+            "abonementUntil": "",
+            "card": "",
+            "groupLeft": 0,
+            "login": "Роман Мичков",
+            "password": "12",
+            "personalLeft": 0,
+            "role": "Администратор",
+            "spent": 0
+        },
+        {
+            "abonementUntil": "",
+            "card": "1",
+            "groupLeft": 0,
+            "login": "Михаил Сюзёв",
+            "password": "12",
+            "personalLeft": 0,
+            "role": "Клиент",
+            "spent": 1000
+        },
+        {
+            "abonementUntil": "",
+            "card": "",
+            "groupLeft": 0,
+            "login": "Михаил Джекович",
+            "password": "12",
+            "personalLeft": 0,
+            "role": "Тренер",
+            "spent": 0
+        },
+        {
+            "abonementUntil": "",
+            "card": "",
+            "groupLeft": 0,
+            "login": "Виктор Баринов",
+            "password": "12",
+            "personalLeft": 0,
+            "role": "Тренер",
+            "spent": 0
+        },
+        {
+            "abonementUntil": "",
+            "card": "2",
+            "groupLeft": 0,
+            "login": "Максим Лавров",
+            "password": "12",
+            "personalLeft": 0,
+            "role": "Клиент",
+            "spent": 0
+        },
+        {
+            "abonementUntil": "",
+            "card": "3",
+            "groupLeft": 0,
+            "login": "Арсений Чуганин",
+            "password": "12",
+            "personalLeft": 0,
+            "role": "Клиент",
+            "spent": 0
+        },
+        {
+            "abonementUntil": "",
+            "card": "4",
+            "groupLeft": 0,
+            "login": "Дмитрий Нагиев",
+            "password": "12",
+            "personalLeft": 0,
+            "role": "Клиент",
+            "spent": 500
+        }
+    ],
+    "visits": [
+        {
+            "className": "Йога",
+            "client": "Михаил Сюзёв",
+            "comment": "",
+            "dateTime": "2026-05-20T15:29:02",
+            "type": "Групповая тренировка",
+            "writeOff": "Списано 500 ₽"
+        },
+        {
+            "className": "Йога",
+            "client": "Михаил Сюзёв",
+            "comment": "",
+            "dateTime": "2026-05-20T15:28:50",
+            "type": "Групповая тренировка",
+            "writeOff": "Списано 500 ₽"
+        },
+        {
+            "className": "Йога",
+            "client": "Дмитрий Нагиев",
+            "comment": "",
+            "dateTime": "2026-05-20T15:02:36",
+            "type": "Групповая тренировка",
+            "writeOff": "не списано: нет занятий"
+        }
+    ]
+}
